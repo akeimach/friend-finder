@@ -16,9 +16,9 @@ router.get('/survey', function(req, res) {
     // res.sendFile('/public/results.js', rootDir);
 });
 
-router.get('/results', function(req, res) {
-    res.sendFile('/public/results.js', rootDir);
-});
+// router.get('/results', function(req, res) {
+//     res.sendFile('/public/results.js', rootDir);
+// });
 
 
 module.exports = router;
