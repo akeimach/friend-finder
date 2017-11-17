@@ -21,7 +21,7 @@ function createNewFriend() {
         "scores": [$("#q1").val()]
     }
     console.log(newFriend);
-    $.post("api/friends", newFriend, function(data) {
+    $.ajax("api/friends", newFriend, function(data) {
         console.log(data);
-    })
+    });
 }
