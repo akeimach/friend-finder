@@ -13,16 +13,21 @@ router.get('/friends', function(req, res) {
 // Also handle compatability logic
 router.post('/friends', function(req, res) {
     var newFriend = req.body;
+    var bestMatch;
+    var maxScore = 50;
     for (var i in allFriends) {
         var newMatch = allFriends[i];
         var score = 0;
         for (var j = 0; j < newMatch.scores.length; j++) {
             score += Math.abs(newMatch.scores[j] - newFriend.scores[j]);
         }
-        console.log(score);
+        if (score < maxScore) {
+            bestMatch = newMatch;
+            maxScore = score;
+        }
     }
     allFriends.push(newFriend);
-    res.json(allFriends);
+    res.json(bestMatch);
 });
 
 
