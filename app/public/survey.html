@@ -204,11 +204,9 @@
             var choices = [];
             var complete = true;
             $(".match-choice").each(function() {
-                // console.log($(this).val());
                 if ($(this).val() === "") complete = false;
                 else choices.push($(this).val());
             });
-            console.log(choices);
             if (complete) createNewFriend(choices);
             else $("#answer-all").modal("toggle");
         });
@@ -216,10 +214,10 @@
 
         $(".close-clear").on("click", function() {
             $(".match-choice").each(function() {
-                $(this).val('');
+                $(this).val("");
             });
-            $("#name").val('');
-            $("#photo").val('');
+            $("#name").val("");
+            $("#photo").val("");
         });
 
 
