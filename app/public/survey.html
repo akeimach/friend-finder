@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="https://www.shareicon.net/data/128x128/2015/11/10/669816_heart_512x512.png"/>
+    <title>Friend Finder Survey</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">Survey Questions</h1>   
+                <hr><br>
+                <form>
+                    <h3>About You</h3>
+                    <div class="form-group">
+                        <label for="name">Name (required)</label>
+                        <input type="text" class="form-control" id="name" placeholder="First Last" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="photo">Link to Photo Image (Required)</label>
+                        <input type="link" class="form-control" id="photo" placeholder="url" required>
+                    </div>
+                    <br>
+
+                    <h3>Questions</h3>
+                    <div class="form-group">
+                        <label for="q1">What is your favorite color?</label>
+                        <select class="form-control match-choice" id="q1">
+                            <option value=""></option>
+                            <option value="1">Red</option>
+                            <option value="2">Orange</option>
+                            <option value="3">Yellow</option>
+                            <option value="4">Green</option>
+                            <option value="5">Blue</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="q2">What is your favorite type of vacation?</label>
+                        <select class="form-control match-choice" id="q2">
+                            <option value=""></option>
+                            <option value="1">Adventure</option>
+                            <option value="2">Tourism</option>
+                            <option value="3">Luxury</option>
+                            <option value="4">Relaxation</option>
+                            <option value="5">Staycation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="q3">Pick your ideal pet</label>
+                        <select class="form-control match-choice" id="q3">
+                            <option value=""></option>
+                            <option value="1">Dog</option>
+                            <option value="2">Cat</option>
+                            <option value="3">Rabbit</option>
+                            <option value="4">Fish</option>
+                            <option value="5">Bird</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="q4">Rate the cleanliness of your living space</label>
+                        <select class="form-control match-choice" id="q4">
+                            <option value=""></option>
+                            <option value="1">1 (Very dirty)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Extra clean)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="q5">What would you choose to do in your free time?</label>
+                        <select class="form-control match-choice" id="q5">
+                            <option value=""></option>
+                            <option value="1">Binge-watch a TV series</option>
+                            <option value="2">Cook a fancy meal</option>
+                            <option value="3">Go on a hike</option>
+                            <option value="4">Read a book</option>
+                            <option value="5">Sleep</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="q6">Which of these cities would you prefer to live in?</label>
+                        <select class="form-control match-choice" id="q6">
+                            <option value=""></option>
+                            <option value="1">New York City</option>
+                            <option value="2">Los Angeles</option>
+                            <option value="3">Miami</option>
+                            <option value="4">San Diego</option>
+                            <option value="5">Denver</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="q7">Which of these books would you most enjoy reading?</label>
+                        <select class="form-control match-choice" id="q7">
+                            <option value=""></option>
+                            <option value="1">Origin of Species</option>
+                            <option value="2">Bible</option>
+                            <option value="3">Hamlet</option>
+                            <option value="4">1984</option>
+                            <option value="5">War and Peace</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="q8">What is your favorite meme?</label>
+                        <select class="form-control match-choice" id="q8">
+                            <option value=""></option>
+                            <option value="1">Doge</option>
+                            <option value="2">Grumpy cat</option>
+                            <option value="3">1st world problem girl</option>
+                            <option value="4">Obsessive girlfriend</option>
+                            <option value="5">This week's hot meme</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="q9">What is your favorite bar food?</label>
+                        <select class="form-control match-choice" id="q9">
+                            <option value=""></option>
+                            <option value="1">Pizza</option>
+                            <option value="2">Wings</option>
+                            <option value="3">French fries</option>
+                            <option value="4">Onion rings</option>
+                            <option value="5">Salad</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="q10">What is your favorite season?</label>
+                        <select class="form-control match-choice" id="q10">
+                            <option value=""></option>
+                            <option value="1">Spring</option>
+                            <option value="2">Summer</option>
+                            <option value="3">Fall</option>
+                            <option value="4">Winter</option>
+                            <option value="5">None</option>
+                        </select>
+                    </div>
+                    <br><br>
+
+                    <!-- Submit Button -->
+                    <button type="button" class="btn btn-dark btn-lg" id="submit">Submit</button>
+                    <a href="/">
+                        <button type="button" class="btn btn-dark btn-lg">Cancel</button>
+                    </a>
+                </form>
+            </div> <!-- container end -->
+        </div> <!-- jumbotron end -->
+
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    <a href="api/friends" class="badge badge-dark">API Friends List</a> | 
+                    <a href="https://github.com/akeimach/friend-finder" target="_blank" class="badge badge-dark">GitHub Repo</a>
+                </p>
+            </div>
+        </footer>
+    </div> <!-- parent container end -->
+
+    <!-- Modal for best match -->
+    <div class="modal fade" id="best-match" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="title"><strong>Match Found!</strong></h2>
+                    <button type="button" class="close close-clear" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h3 id="best-name"></h3>
+                    <img id="best-photo" class="img-fluid" src="" alt="Your match's image">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close-clear" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for asking user to complete -->
+    <div class="modal fade" id="answer-all" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="title"><strong>Error</strong></h5>
+                    <button type="button" class="close close-clear" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>You need to answer every question</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    
+    <!-- js -->
+    <script type="text/javascript">
+        $("#submit").on("click", function() {
+            var choices = [];
+            var complete = true;
+            $(".match-choice").each(function() {
+                if ($(this).val() === "") complete = false;
+                else choices.push($(this).val());
+            });
+            if (complete) createNewFriend(choices);
+            else $("#answer-all").modal("toggle");
+        });
+
+
+        $(".close-clear").on("click", function() {
+            $(".match-choice").each(function() {
+                $(this).val("");
+            });
+            $("#name").val("");
+            $("#photo").val("");
+        });
+
+
+        function createNewFriend(choices) {
+            var newFriend = {
+                name: $("#name").val(),
+                photo: $("#photo").val(),
+                scores: choices
+            }
+            // use ajax not post
+            // ajax has more options, need to specify contentType for body-parse
+            // to work correctly in express put
+            var friendData = JSON.stringify(newFriend); //the newly created object
+            $.ajax({
+                url: "api/friends",
+                type: "POST",
+                data: friendData,
+                contentType: "application/json; charset=utf-8", // This is the money
+                dataType: "json"
+            }).done(function(data) {
+                $("#best-name").text(data.name);
+                $("#best-photo").attr("src", data.photo);
+                $("#best-match").modal("toggle");
+            });
+        }
+    </script>
+</body>
+</html>
